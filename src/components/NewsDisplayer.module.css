@@ -1,0 +1,36 @@
+.container {
+  border: 1px solid #444; /* Lighter border */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adjusted shadow */
+  margin: 5px auto;
+  padding: 5px;
+  width: 100%;
+  font-family: sans-serif;
+  background-color: #1e1e1e;
+  color: #ccc;
+}
+
+.dateArea {
+  background-color: #2a2a2a;
+  padding: 8px;
+  border-radius: 4px 4px 0 0;
+  margin-bottom: 10px;
+}
+
+.summaryArea {
+  margin-bottom: 10px;
+}
+
+.summaryText {
+  font-size: 0.8em;
+  line-height: 1.5;
+}
+
+.sentimentArea {
+  background-color: #2a2a2a;
+  padding: 3px;
+  border-radius: 0 0 4px 4px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}

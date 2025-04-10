@@ -1,0 +1,18 @@
+.newsList {
+  padding: 20px;
+}
+
+.sortControls {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.sortControls label {
+  margin-right: 5px;
+}
+
+.sortControls select {
+  margin-right: 10px;
+  padding: 5px;
+}

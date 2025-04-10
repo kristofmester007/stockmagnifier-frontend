@@ -1,0 +1,18 @@
+.recommendation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 0;
+  border-bottom: 1px solid #444;
+}
+
+.ticker {
+  text-decoration: none;
+  color: #ccc;
+  font-weight: bold;
+}
+
+.ticker:hover {
+  color: #fff;
+  text-decoration: underline;
+}

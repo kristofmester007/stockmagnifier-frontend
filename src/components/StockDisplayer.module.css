@@ -1,0 +1,9 @@
+.container {
+  font-family: sans-serif;
+  color: #ccc;
+}
+
+.noNewsMessage {
+  text-align: center;
+  padding-top: 10%;
+}

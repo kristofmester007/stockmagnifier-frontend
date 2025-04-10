@@ -1,0 +1,36 @@
+.appContainer {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.stockListContainer {
+  width: 20%;
+  height: 100%;
+}
+
+.stockDisplayerContainer {
+  flex: 1;
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.noSelectionMessage {
+  color: #ccc;
+  font-size: 1.2em;
+  text-align: center;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.warning {
+  color: rgb(220, 125, 125);
+}
+
