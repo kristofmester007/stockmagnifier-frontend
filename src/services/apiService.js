@@ -1,5 +1,5 @@
 const API_KEY = 'twetArxt5425AgesR'; // IMPORTANT: DO NOT DO THIS IN PRODUCTION!
-const BASE_URL = 'http://56.228.23.165:8091';
+const BASE_URL = 'https://dbatx57diay0.cloudfront.net'; //AWS CloudFront for backend
 
 export const fetchStockData = async (ticker) => {
   try {
