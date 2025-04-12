@@ -36,6 +36,11 @@ To create a production build of the frontend:
 3.  The production-ready files will be located in the `dist` directory. You will need to serve these files using a web server (e.g., Nginx, Apache, or a Node.js server) for deployment.
 4.  Run the application to make sure everything went well: `npm run preview`
 
+## Related Projects
+
+You can also find the backend related to this project at https://github.com/kristofmester007/stockmagnifier-backend.
+
+A deployed version of this project is available at: https://stockmagnifier.com
 
 ##   Copyright
 
