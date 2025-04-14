@@ -1,10 +1,13 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect  } from 'react';
 import NewsDisplayer from './NewsDisplayer';
 import styles from './NewsList.module.css';
 
 function NewsList({ news }) {
-  const [sortBy, setSortBy] = useState('date');
-  const [sortOrder, setSortOrder] = useState('desc');
+  const initialSortBy = localStorage.getItem('newsListSortBy') || 'date';
+  const initialSortOrder = localStorage.getItem('newsListSortOrder') || 'desc';
+  
+  const [sortBy, setSortBy] = useState(initialSortBy);
+  const [sortOrder, setSortOrder] = useState(initialSortOrder);
 
   const sortedNews = useMemo(() => {
     const sorted = [...news];
@@ -25,11 +28,15 @@ function NewsList({ news }) {
   }, [news, sortBy, sortOrder]);
 
   const handleSortByChange = (event) => {
-    setSortBy(event.target.value);
+    const newSortBy = event.target.value;
+    setSortBy(newSortBy);
+    localStorage.setItem('newsListSortBy', newSortBy);
   };
 
   const handleSortOrderChange = (event) => {
-    setSortOrder(event.target.value);
+    const newSortOrder = event.target.value;
+    setSortOrder(newSortOrder);
+    localStorage.setItem('newsListSortOrder', newSortOrder);
   };
 
   return (

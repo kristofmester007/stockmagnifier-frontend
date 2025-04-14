@@ -28,7 +28,7 @@
   width: 100%;
 }
 
-.fasz {
+.expandedInfo {
   display: flex;
   align-items: center;
   width: 100%;
@@ -40,6 +40,6 @@
 
 .chartContainer {
   width: 300px;
-  height: 170px;
+  height: 200px;
   margin-left: 5%;
 }

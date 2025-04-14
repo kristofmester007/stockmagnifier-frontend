@@ -65,6 +65,11 @@ function AnalysisDisplayer({ stockData }) {
         },
         scales: {
             x: {
+                title: {
+                    display: true,
+                    text: 'Days Ago',
+                    color: '#fff',
+                },
                 ticks: {
                     color: '#fff',
                 },
@@ -73,6 +78,11 @@ function AnalysisDisplayer({ stockData }) {
                 },
             },
             y: {
+                title: {
+                    display: true,
+                    text: 'Sentiment',
+                    color: '#fff',
+                },
                 min: -1000,
                 max: 1000,
                 ticks: {
@@ -94,7 +104,7 @@ function AnalysisDisplayer({ stockData }) {
     return (
         <div className={styles.stockInfo}>
             {isExpanded ? (
-                <div className={styles.fasz}>
+                <div className={styles.expandedInfo}>
                     <div>
                         <h2>{ticker} Stock Analysis</h2>
                         <p>Total News: {totalNews}</p>
